@@ -48,7 +48,7 @@ class User{
 }
 
 function readUsers(){
-    fs.readFile('Users.txt','utf8',(err,data) =>  {
+    fs.readFile('Users.json','utf8',(err,data) =>  {
         if(err){
             console.error(err);
             return
@@ -57,7 +57,7 @@ function readUsers(){
     });
 }
 function addUser(user){
-    fs.readFile('Users.txt','utf8',(err,data) => {
+    fs.readFile('Users.json','utf8',(err,data) => {
         if (err) {
             console.error(err);
             return
