@@ -1,5 +1,6 @@
 // npm install prompt-sync
 'use strict';
+let Users = [];
 const ps = require('prompt-sync');
 const prompt = ps();
 const fs = require('fs');
@@ -71,6 +72,7 @@ function addUser(user){
                 return;
             }
         })
+        Users.push(user);
     }
 })
 }
